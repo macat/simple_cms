@@ -1,6 +1,12 @@
 SimpleCms::Application.routes.draw do
 
+  # get "admin_users/index"
+  # get "admin_users/new"
+  # get "admin_users/edit"
+  # get "admin_users/delete"
   root "demo#index"
+
+  get 'admin', :to => "access#index"
   
   #get "demo/index"
   match ':controller(/:action(/:id))', :via => [:get, :post]
