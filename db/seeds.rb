@@ -11,4 +11,4 @@ AdminUser.create!(first_name: 'Pat',
 									last_name: 'Murphy',
 									email: 'p@p.com',
 									username: 'patmurphy',
-									password: 'secret')
+									password: 'secret', password_confirmation: 'secret')
