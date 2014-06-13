@@ -33,6 +33,7 @@ class AdminUser < ActiveRecord::Base
 										:length => {:maximum => 100},
 										:format => EMAIL_REDEX,
 										:confirmation => true
+  validates :country, :presence => true
 	validate :username_is_allowed
 
 	scope :sorted, lambda {order("last_name ASC, first_name ASC")}
