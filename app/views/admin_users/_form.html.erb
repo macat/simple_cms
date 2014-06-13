@@ -22,6 +22,10 @@
     <td><%= f.password_field(:password) %></td>
   </tr>
   <tr>
+  <tr>
+    <th><%= f.label(:password_confirmation) %></th>
+    <td><%= f.password_field(:password_confirmation) %></td>
+  </tr>
     <th><%= f.label(:country) %></th>
     <td><%= f.country_select :country, [''] %></td>
   </tr>
